@@ -21,8 +21,20 @@ export default class App {
 
     return conteo;
   }
+  sumarParesWhile() {
+    let sumar = 0;
+    let i = 1;
+    while (i <= 20) {
+      if (i % 2 == 0) {
+        sumar = sumar + i;
+      }
+      i = i + 1;
+    }
+    return sumar;
+  }
 }
 
 let app = new App();
 console.log(app.sumarParesFor());
 console.log(app.contarImparesFor(2, 10));
+console.log(app.sumarParesWhile());
